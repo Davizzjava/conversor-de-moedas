@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h2>Conversor de Moedas 💱</h2>
+    <div class="input-group">
+      <input type="number" id="valor" value="1" min="1">
+    </div>
+    <div class="moedas-group">
+      <select id="moedaOrigem">
+        <option value="USD">🇺🇸 USD - Dólar</option>
+        <option value="BRL">🇧🇷 BRL - Real</option>
+        <option value="EUR">🇪🇺 EUR - Euro</option>
+      </select>
+      <span> ➡️ </span>
+      <select id="moedaDestino">
+        <option value="BRL" selected>🇧🇷 BRL - Real</option>
+        <option value="USD">🇺🇸 USD - Dólar</option>
+        <option value="EUR">🇪🇺 EUR - Euro</option>
+      </select>
+    </div>
+    <button onclick="converterMoeda()">Converter</button>
+    <h3 id="resultado">R$ 0,00</h3>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
